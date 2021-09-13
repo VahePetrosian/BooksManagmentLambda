@@ -23,10 +23,10 @@ jobs:
       
       - name: Push to S3 and create lambda
         run: 
-          dotnet lambda deploy-function 
-          -pl BooksManagmentLambda/ChangeLogLambda 
+          dotnet lambda deploy-function
           --region eu-central-1 
-          -fn sqsChange 
-          -frun dotnetcore3.1 
-          -frole lambda-role 
-          -sb lambda-bucket-books-v-luigf
+          --project-location BooksManagmentLambda/ChangeLogLambda 
+          --function-name sqsChangeLambda
+          --function-role lambda-role 
+          --function-runtime dotnetcore3.1 
+          --s3-bucket  lambda-bucket-books-v-luigfsddasf
