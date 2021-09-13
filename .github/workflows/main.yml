@@ -34,4 +34,4 @@ jobs:
           --function-role lambda-role 
           --function-runtime dotnetcore3.1 
           --s3-bucket lambda-bucket-books-v-luigfsddasf
-          --environment-variables log_bucket_name=log-bucket-books-v-luigfsddasf
+          --environment-variables log-bucket-name=log-bucket-books-v-luigfsddasf
