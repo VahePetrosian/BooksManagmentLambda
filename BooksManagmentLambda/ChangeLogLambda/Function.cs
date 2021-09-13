@@ -32,7 +32,7 @@ namespace ChangeLogLambda
       var request = new PutObjectRequest
       {
         BucketName = "log-bucket-books-v-luigfsddasf",
-        Key = $"{DateTime.Now}-log.txt",
+        Key = $"{DateTime.Now.ToString("yyyy/MM/dd/hh-mm-ss")}-log.txt",
         ContentBody = message.Body,
         ContentType = "text/plain",
         StorageClass = S3StorageClass.Standard,
