@@ -31,7 +31,7 @@ namespace ChangeLogLambda
 
       var request = new PutObjectRequest
       {
-        BucketName = System.Environment.GetEnvironmentVariable("log_bucket_name"),
+        BucketName = "log-bucket-books-v-luigfsddasf",
         Key = $"{DateTime.Now.ToString("yyyy/MM/dd/hh-mm-ss")}-log.txt",
         ContentBody = message.Body,
         ContentType = "text/plain",
