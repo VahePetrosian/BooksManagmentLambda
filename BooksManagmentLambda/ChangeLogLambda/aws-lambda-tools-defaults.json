@@ -12,5 +12,6 @@
   "function-runtime": "dotnetcore3.1",
   "function-memory-size": 256,
   "function-timeout": 30,
-  "function-handler": "ChangeLogLambda::ChangeLogLambda.Function::FunctionHandler"
+  "function-handler": "ChangeLogLambda::ChangeLogLambda.Function::FunctionHandler",
+  "environment-variables": "\"log_bucket_name\"=\"log-bucket-books-v-luigfsddasf\";"
 }
