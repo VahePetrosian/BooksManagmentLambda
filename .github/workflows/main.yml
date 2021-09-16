@@ -2,6 +2,8 @@ name: Lambda S3 Deploy
 
 on:
   workflow_dispatch:
+    types:
+    - template-start-trigger
   push:
     branches: [ master ]
   pull_request:
